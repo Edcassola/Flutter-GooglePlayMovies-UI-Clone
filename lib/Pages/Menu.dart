@@ -1,4 +1,5 @@
 
+import 'package:GooglePlayMovies/Pages/definition.dart';
 import 'package:GooglePlayMovies/Pages/store.dart';
 import 'package:GooglePlayMovies/Pages/wish_List.dart';
 import 'package:flutter/material.dart';
@@ -77,9 +78,7 @@ class _MenuState extends State<Menu> {
                 title: Text("Definições", style: TextStyle(color: Colors.black87, fontSize: 15,
                         fontWeight: FontWeight.w500),),
                   onTap: () { 
-                    
-                    
-                    // Navigator.of(context).pushNamed("/a");
+                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Definition()),);
                   
                   },
                 ),
