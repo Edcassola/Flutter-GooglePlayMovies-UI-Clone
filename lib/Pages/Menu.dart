@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-
+import 'my_Library.dart';
 
 class Menu extends StatefulWidget {
   @override
@@ -43,7 +43,7 @@ class _MenuState extends State<Menu> {
                         fontWeight: FontWeight.w500),),
                 leading: Icon(Icons.video_library, color: Color.fromRGBO(34, 100, 120, 1),),
                 onTap: () { 
-                    
+                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Library()),);
                   }, 
               ),
               ListTile(
