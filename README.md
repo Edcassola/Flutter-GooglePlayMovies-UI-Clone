@@ -2,7 +2,7 @@
 
 This project is part of a playful idea, whose purpose is to draw screens in Adobe XD or simply redesign the user interface of apps already known with Flutter and other technologies with which I work.
 
-![alt text](https://user-images.githubusercontent.com/Flutter-GooglePlayMovies-UI-Clone/img-readme.png)
+![img-readme](https://user-images.githubusercontent.com/43777143/103446629-24b17080-4c82-11eb-98ce-84c8576350c5.png)
 
 
 Check out, all things that i did along of this projet
