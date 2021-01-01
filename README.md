@@ -1,10 +1,26 @@
 # GooglePlayMovies
 
-A new Flutter project.
+This project is part of a playful idea, whose purpose is to draw screens in Adobe XD or simply redesign the user interface of apps already known with Flutter and other technologies with which I work.
+
+![alt text](https://user-images.githubusercontent.com/Flutter-GooglePlayMovies-UI-Clone/img-readme.png)
+
+
+Check out, all things that i did along of this projet
+
+- [x] Create the app
+- [x] App bar & Search
+- [ ] Movie Cards
+- [ ] Initial page (incomplete for now)
+- [x] Menu 
+- [x] My Library Page
+- [x] My Wishlist Page
+- [x] Toggle filter
+- [x] Definition Page
+- [x] Helpers
+- [x] Dialogs
+
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
