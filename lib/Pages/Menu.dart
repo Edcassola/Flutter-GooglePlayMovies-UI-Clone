@@ -1,5 +1,6 @@
 
 import 'package:GooglePlayMovies/Pages/definition.dart';
+import 'package:GooglePlayMovies/Pages/home.dart';
 import 'package:GooglePlayMovies/Pages/store.dart';
 import 'package:GooglePlayMovies/Pages/wish_List.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +39,7 @@ class _MenuState extends State<Menu> {
                         fontWeight: FontWeight.w500),),
                 leading: Icon(Icons.local_movies, color: Color.fromRGBO(34, 100, 120, 1),),
                 onTap: () { 
-                    
+                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Home()),);
                   },
               ),
               ListTile(

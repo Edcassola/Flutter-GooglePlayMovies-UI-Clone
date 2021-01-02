@@ -19,27 +19,75 @@ class Home extends StatelessWidget {
       ),
       drawer: Menu(),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Column(
+          children: <Widget>[
+            Stack(
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.all(25.0),
+                  padding: EdgeInsets.fromLTRB(25.0, 0.0, 25.0, 20),
+                  decoration: BoxDecoration(
+                  color: Colors.redAccent
+                  ),
+          child: Column(
             children: <Widget>[
-              // Center(
-          Container(
-            height: 90,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-              image: AssetImage('assets/images/download.png'),
-            )
-          )
+              Container(
+                margin: EdgeInsets.all(22.0),
+                padding: EdgeInsets.fromLTRB(25.0, 30.0, 25.0, 100),
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                image: AssetImage('assets/images/view.png'),
+                fit: BoxFit.fitHeight
+                )
+            ),
         ),
-
-          Text("Para ver vídeos offline, é necessário tranferi-los primeiro", 
-        style: TextStyle(color: Colors.grey), textAlign: TextAlign.center,),
-              // )
-            ],
-          )
-        ]
-      )
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Padding(
+        padding: const EdgeInsets.all(6.0),
+        child: Text(
+          "Get Started",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+      Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Text(
+            "Find a great movie in the Play Store, then kick back and enjoy with the Play Movies & TV app.", style: 
+            TextStyle(color: Colors.white, fontSize: 15.0,))
+      ),
+        ],
+      ),
+      Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          FlatButton(
+        color: Colors.red[800],
+        textColor: Colors.white,
+        disabledColor: Colors.grey,
+        disabledTextColor: Colors.black,
+          padding: EdgeInsets.all(10.0),
+          splashColor: Colors.red[500],
+          onPressed: () {/*...*/},
+      child: Text(
+        "SHOP MOVIES",
+        style: TextStyle(fontSize: 14.0),
+                            ),
+                          )
+                        ]
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
     );
   }
 }

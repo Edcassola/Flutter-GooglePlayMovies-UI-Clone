@@ -101,13 +101,13 @@ class _LibraryState extends State<Library> {
       child: Text(
         "SHOP MOVIES",
         style: TextStyle(fontSize: 14.0),
-          ),
-        )
-        ]
-      ),
-    ],
-  ),
-),
+                            ),
+                          )
+                        ]
+                      ),
+                    ],
+                  ),
+                ),
               ],
             )
           ],
