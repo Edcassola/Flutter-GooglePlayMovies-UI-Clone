@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title: Text('Ver agora', style: TextStyle(fontSize: 15),),
+        title: Text('Watch Now', style: TextStyle(fontSize: 19),),
         actions: <Widget>[
           IconButton(
                 onPressed: () {},

@@ -7,7 +7,7 @@ class WishList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title: Text('A minha lista de desejos', style: TextStyle(fontSize: 15),),
+        title: Text('My Wishlist', style: TextStyle(fontSize: 15),),
         actions: <Widget>[
           IconButton(
                 onPressed: () {},
@@ -27,7 +27,7 @@ class WishList extends StatelessWidget {
           image: AssetImage('assets/images/add.png'),
         ))
         ),
-        Text("Para guardar filmes para ver mais tarde, toque em Adicionar à lista de desejos", 
+        Text("To save movies to watch later, touch Add to Wishlist", 
         style: TextStyle(color: Colors.grey), textAlign: TextAlign.center,),],
         
       )

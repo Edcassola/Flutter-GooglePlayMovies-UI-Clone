@@ -1,6 +1,8 @@
 // import 'package:Play_Filmes_Clone/Screens/Menu/menu.dart';
 import 'package:flutter/material.dart';
 
+import 'Menu.dart';
+
 class Library extends StatefulWidget {
   @override
   _LibraryState createState() => _LibraryState();
@@ -16,7 +18,7 @@ class _LibraryState extends State<Library> {
         
         backgroundColor: Colors.red,
         title: Padding(
-          padding: EdgeInsets.only(top: 8),
+          padding: EdgeInsets.only(top: 2),
           child:_menuAppBar(),),
         actions: <Widget>[
           IconButton(
@@ -30,7 +32,7 @@ class _LibraryState extends State<Library> {
             tabs: <Widget>[
               Tab(
                 child: Container(
-                  child: Text("FILMES")
+                  child: Text("MOVIES")
                 ),
               ),
               Tab(
@@ -41,7 +43,7 @@ class _LibraryState extends State<Library> {
             ],
           ),
         ),
-
+        drawer: Menu(),
         body: Column(
           children: <Widget>[
             Stack(
@@ -121,7 +123,7 @@ class _LibraryState extends State<Library> {
                   textAlign: TextAlign.left,
                 ),
                  SizedBox(width: 45),
-                FlatButton(
+        FlatButton(
           color: Colors.red[500],
           textColor: Colors.white,
           disabledColor: Colors.grey,
@@ -146,7 +148,7 @@ class _LibraryState extends State<Library> {
 
   Widget _menuAppBar() {
     return Container(
-      child: Text('Minha Biblioteca'),
+      child: Text('My Library'),
     );
   }
 }

@@ -35,7 +35,7 @@ class _MenuState extends State<Menu> {
                 ),
     
               ListTile(
-                title: Text("Ver Agora", style: TextStyle(color: Colors.black87, fontSize: 15,
+                title: Text("Watch Now", style: TextStyle(color: Colors.black87, fontSize: 15,
                         fontWeight: FontWeight.w500),),
                 leading: Icon(Icons.local_movies, color: Color.fromRGBO(34, 100, 120, 1),),
                 onTap: () { 
@@ -43,7 +43,7 @@ class _MenuState extends State<Menu> {
                   },
               ),
               ListTile(
-                title: Text("A minha biblioteca", style: TextStyle(color: Colors.black87, fontSize: 15,
+                title: Text("My Library", style: TextStyle(color: Colors.black87, fontSize: 15,
                         fontWeight: FontWeight.w500),),
                 leading: Icon(Icons.video_library, color: Color.fromRGBO(34, 100, 120, 1),),
                 onTap: () { 
@@ -51,7 +51,7 @@ class _MenuState extends State<Menu> {
                   }, 
               ),
               ListTile(
-                title: Text("A minha lista de desejos", style: TextStyle(color: Colors.black87, fontSize: 15,
+                title: Text("My Wishlist", style: TextStyle(color: Colors.black87, fontSize: 15,
                         fontWeight: FontWeight.w500),),
                 leading: Icon(Icons.check_box, color: Color.fromRGBO(34, 100, 120, 1),),
                 onTap: () { 
@@ -59,7 +59,7 @@ class _MenuState extends State<Menu> {
                   },
               ),
               ListTile(
-                title: Text("Loja", style: TextStyle(color: Colors.black87, fontSize: 15,
+                title: Text("Shop", style: TextStyle(color: Colors.black87, fontSize: 15,
                         fontWeight: FontWeight.w500),),
                 leading: Icon(Icons.ondemand_video, color: Color.fromRGBO(34, 100, 120, 1),),
                 onTap: () { 
@@ -70,13 +70,13 @@ class _MenuState extends State<Menu> {
                   Row(
                     children: <Widget>[
                     SizedBox(width: 20,),          
-                  Text("Transferido apenas", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),),
+                  Text("Download only", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),),
                   SizedBox(width: 50,),
                  
                   ],
                 ),
               ListTile(
-                title: Text("Definições", style: TextStyle(color: Colors.black87, fontSize: 15,
+                title: Text("Settings", style: TextStyle(color: Colors.black87, fontSize: 15,
                         fontWeight: FontWeight.w500),),
                   onTap: () { 
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Definition()),);
@@ -84,7 +84,7 @@ class _MenuState extends State<Menu> {
                   },
                 ),
               ListTile(
-                title: Text("Ajuda e comentários", style: TextStyle(color: Colors.black87, fontSize: 15,
+                title: Text("Help & feedback", style: TextStyle(color: Colors.black87, fontSize: 15,
                   fontWeight: FontWeight.w500),),
                   onTap: () => _tapCallback,
           ),
