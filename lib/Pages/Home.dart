@@ -88,55 +88,83 @@ class Home extends StatelessWidget {
                   ),
                 ],
               ),
-              SingleChildScrollView(
+              SizedBox(height: 16),
+              Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                 children: <Widget>[
+                   Text(
+            "Recommended by Play",
+              style:
+        TextStyle(fontSize: 21, color: Colors.black, fontWeight: FontWeight.w600),
+                  textAlign: TextAlign.left,
+                ),
+                 SizedBox(width: 45),
+                FlatButton(
+          color: Colors.red[500],
+          textColor: Colors.white,
+          disabledColor: Colors.grey,
+          disabledTextColor: Colors.black,
+            padding: EdgeInsets.all(8.0),
+            splashColor: Colors.red[300],
+            onPressed: () {/*...*/},
+        child: Text(
+          "SHOP",
+          style: TextStyle(fontSize: 14.0),
+                              ),
+                            )
+
+                 ],
+              ),
+              SizedBox(height: 16),
+        SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
         Container(
-                      margin: EdgeInsets.symmetric(vertical: 0.1, horizontal: 23),
-                  padding: EdgeInsets.fromLTRB(25, 165,25,120),
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/Lion-King.jpg'),
-                          fit: BoxFit.cover)),
+            margin: EdgeInsets.symmetric(vertical: 0.1, horizontal: 23),
+            padding: EdgeInsets.fromLTRB(25, 165,25,120),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/Lion-King.jpg'),
+                  fit: BoxFit.cover)),
                 ),
         Container(
-                  margin: EdgeInsets.symmetric(vertical: 0.1, horizontal: 23),
-                  height: 225,
-                  decoration: BoxDecoration(
-                    color: Colors.deepOrange,
+            margin: EdgeInsets.symmetric(vertical: 0.1, horizontal: 23),
+            height: 225,
+            decoration: BoxDecoration(
+              color: Colors.deepOrange,
                   ),
-                 child: Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 13, vertical: 20),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
+                child: Padding(
+                  padding:
+                  const EdgeInsets.symmetric(horizontal: 13, vertical: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.max,
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
 
         Container(
-                  margin: EdgeInsets.symmetric(vertical: 0.1, horizontal: 13),
-                  padding: EdgeInsets.symmetric(vertical: 90, horizontal: 73),
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/Lion-King-Cover.jpg'),
-                          fit: BoxFit.fitHeight)),
-                ),
+          margin: EdgeInsets.symmetric(vertical: 0.1, horizontal: 13),
+          padding: EdgeInsets.symmetric(vertical: 90, horizontal: 73),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+              image: AssetImage('assets/images/Lion-King-Cover.jpg'),
+                fit: BoxFit.fitHeight)),
+              ),
 
         Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                  SizedBox(height: 4),
+          crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+        SizedBox(height: 4),
         Text(
-                              "The Lion King",
-                              style:
-                                  TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
-                              textAlign: TextAlign.right,
-                              ),
-                  SizedBox(height: 12),
+            "The Lion King",
+              style:
+        TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
+                  textAlign: TextAlign.right,
+                ),
+        SizedBox(height: 12),
         SmoothStarRating(
           allowHalfRating: false,
           onRated: (v) {
@@ -161,11 +189,11 @@ class Home extends StatelessWidget {
           ),
 SizedBox(width: 57),
         Container(
-                  width: 150,
-                  child: IconButton(
-                  icon: Icon(Icons.bookmark),
-                  color: Colors.white,
-                  onPressed: () {},
+                width: 150,
+                child: IconButton(
+                icon: Icon(Icons.bookmark),
+                color: Colors.white,
+                onPressed: () {},
                           ),
                         ),
                       ],
