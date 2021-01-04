@@ -109,7 +109,35 @@ class _LibraryState extends State<Library> {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 16),
+              Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                 children: <Widget>[
+                   Text(
+            "Recommended by Play",
+              style:
+        TextStyle(fontSize: 21, color: Colors.black, fontWeight: FontWeight.w600),
+                  textAlign: TextAlign.left,
+                ),
+                 SizedBox(width: 45),
+                FlatButton(
+          color: Colors.red[500],
+          textColor: Colors.white,
+          disabledColor: Colors.grey,
+          disabledTextColor: Colors.black,
+            padding: EdgeInsets.all(8.0),
+            splashColor: Colors.red[300],
+            onPressed: () {/*...*/},
+        child: Text(
+          "SHOP",
+          style: TextStyle(fontSize: 14.0),
+                              ),
+                            )
+
+                 ],
+              ),
+              SizedBox(height: 16),
           ],
         ),
       )
