@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 import 'Menu.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  var rating = 3.0;
+
   @override
   Widget build(BuildContext context) {
-    var rating = 0.0;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
@@ -166,28 +172,31 @@ class Home extends StatelessWidget {
                 ),
         SizedBox(height: 12),
         SmoothStarRating(
-          allowHalfRating: false,
+          allowHalfRating: true,
           onRated: (v) {
            },
           starCount: 5,
           rating: rating,
           size: 20.0,
-          isReadOnly:true,
+          isReadOnly: false,
           color: Colors.white,
+          filledIconData: Icons.star,
           borderColor: Colors.white,
           spacing:0.0
     ),
-
-                  SizedBox(height: 77),
-
-        OutlineButton(
-                onPressed: () {},
-                child: Text("BUY FROM AOA 6.900,00"),
-                borderSide: BorderSide(color: Colors.white),
-              )
+        SizedBox(height: 77),
+        SizedBox(
+          width: 300,
+                  child: OutlineButton( 
+                  onPressed: () {},
+                  child: Text("BUY FROM AOA 6.900,00", style: TextStyle(color: Colors.white),),
+                  borderSide: BorderSide(color: Colors.white),
+                  
+                ),
+        )
             ],
           ),
-SizedBox(width: 57),
+        SizedBox(width: 57),
         Container(
                 width: 150,
                 child: IconButton(
@@ -201,7 +210,8 @@ SizedBox(width: 57),
                   ],
                       ),
                     ),
-                  )
+                  ),
+                  SizedBox(height: 14),
                 ]
               )
             )
