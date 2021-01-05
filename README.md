@@ -8,13 +8,14 @@ This project is part of a playful idea, whose purpose is to draw screens in Adob
 Check out, all things that i did along of this projet
 
 - [x] Create the app
-- [x] App bar & Search
-- [ ] Movie Cards
+- [x] App bar
+- [ ] Search Bar
+- [x] Movie Cards
 - [ ] Initial page (incomplete for now)
 - [x] Menu 
-- [x] My Library Page
+- [ ] My Library Page
 - [x] My Wishlist Page
-- [x] Toggle filter
+- [ ] Toggle filter
 - [x] Definition Page
 - [x] Helpers
 - [x] Dialogs
