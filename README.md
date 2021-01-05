@@ -9,7 +9,7 @@ Check out, all things that i did along of this projet
 
 - [x] Create the app
 - [x] App bar
-- [ ] Search Bar
+- [x] Search Bar
 - [x] Movie Cards
 - [ ] Initial page (incomplete for now)
 - [x] Menu 
